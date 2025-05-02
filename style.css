@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fbfbfb;
+}
+
+.profile-form {
+  max-width: 652px;
+}
+
+.profile {
+  width: 64px;
+  height: 64px;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 auto 42px;
+}
+
+form {
+  /* text-align: center; */
+  padding: 48px;
+  width: 100%;
+  border: 1px solid #6666;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 32px;
+}
+
+form > div > label {
+  margin-bottom: 7px;
+  display: inline-block;
+}
+
+form > div > input {
+  min-width: 549px;
+  padding: 15px 24px;
+  border-radius: 12px;
+  border: 1px solid #6666;
+}
+
+form > div > input[type="submit"] {
+  padding: 15px 0;
+  text-align: center;
+  background: #000;
+  border-radius: 40px;
+  color: white;
+}
+
+.password-form > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    margin-bottom: 20px;
+  }
+  form {
+    width: 80%;
+    margin: auto;
+    padding: 20px 20px;
+    gap: 10px;
+    border-radius: 15px;
+  }
+
+  form > div > input {
+    min-width: 100%;
+  }
+
+  .password-form > ul {
+    gap: 10px;
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+  }
+}
